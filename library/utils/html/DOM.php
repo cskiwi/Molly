@@ -44,7 +44,7 @@ use \Molly\library\io\dataloaders\files\File;
 
 use \Molly\library\exceptions\InvalidConstructorException;
 
-class DOM extends AbstractDOMElement implements DOMElement
+class DOM extends AbstractDOMElement
 {
     /**
      * @var File $file.

@@ -7,6 +7,7 @@
  * Molly CMS - Written by Boris Wintein
  */
 // Require our libary autoloader.
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 require_once("library/toolbelt/Classloader.php");
 
 $template = &\Molly\library\out\templating\Theme::getInstance();
