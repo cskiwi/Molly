@@ -86,12 +86,12 @@ class Theme {
                 )
         );
 
-        $this->quickLoop($this->template);
+        $this->quickLoop($this->template->getRootNode());
         die();
     }
 
     private function quickLoop(DOMElement $node) {
-        echo "< " . $node->getTag() . ' ></br>';
+        echo "< " . $node->getTag() . ' > </br>';
 
         if ($node->hasChildNodes()) {
             $children = $node->getChildNodes();

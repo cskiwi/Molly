@@ -710,7 +710,7 @@ abstract class AbstractDOMElement extends AbstractEventDispatcher implements DOM
                         // Check if there is only 1 word between the cursor and the closest '>'
                         $rt = strpos($this->rawHTML, '>', $this->cursor);
 
-                        $possible_closing_tag = substr($this->rawHTML, $this->cursor + 2, $rt - $this->cursor-2);
+                        $possible_closing_tag = substr($this->rawHTML, $this->cursor + 2, $rt - $this->cursor - 2);
 
                         if ( $rt !== false && !preg_match('$[\/][\w]+$', $possible_closing_tag)) {
                             if (strtolower($possible_closing_tag) == $this->getTag()) {
